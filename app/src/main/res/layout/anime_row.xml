@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/loading"
+            android:id="@+id/thumbnail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+
+            <TextView
+                android:textColor="#2C2C2C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anime_name"
+                android:text="Anime Title"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:textColor="#2C2C2C"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:id="@+id/categorie"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                android:text="0.0"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rating_background"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_star_black_24dp"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:textColor="#2C2C2C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Studio"
+                android:layout_marginTop="5dp"
+                android:id="@+id/studio"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
